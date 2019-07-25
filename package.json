@@ -1,0 +1,25 @@
+{
+  "name": "fashion_music_cvs",
+  "version": "0.0.3",
+  "description": "画布实现音频数据显示",
+  "main": "./index.js",
+  "scripts": {
+    "test": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/Chinegoodman/fashion_clock/blob/master/psf_fashion_clock.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Chinegoodman/fashion_clock/issues"
+  },
+  "homepage": "https://github.com/Chinegoodman/fashion_clock",
+  "keywords": [
+    "PSF",
+    "psf",
+    "fashion",
+    "fashion_music_cvs"
+  ],
+  "author": "小庞",
+  "license": "MIT"
+}

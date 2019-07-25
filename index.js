@@ -1,0 +1,1 @@
+module.exports = require('./lib/fashion_music_cvs');

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zn-CH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <header name="Access-Control-Allow-Origin" value="*" />
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #cvsbox {
+            /* width: 210px; */
+            /* height: 210px; */
+            width: 100vw;
+            height: 100vw;
+            max-width: 750px;
+            max-height: 750px;
+            margin: 0 auto;
+            position: relative;
+            /* background-color: royalblue; */
+            background: url('http://ooo0o.com/4eafc201905200012388758.jpg') center center no-repeat;
+            background-size: cover;
+        }
+        
+        #cvs {
+            display: block;
+            /* width: 800px; */
+            /* height: 800px; */
+            /* animation: rotate 6s linear infinite; */
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform-origin: 0 0;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio preload style="display: none;" id="music" controls src="./music/test.mp3"></audio>
+    <!-- http://ooo0o.com/39721201904270414309697.mp3 -->
+    <div id="cvsbox">
+        <canvas id="cvs" width="800" height="600"></canvas>
+    </div>
+
+    <div style="position: fixed;left:0;top:45%;background-color: #ccc;padding: 10px 20px;">
+        <button onclick="bofang()">播放</button>
+        <button onclick="zanting()">暂停</button>
+    </div>
+    <script src="./music_canvas_show.js"></script>
+    <script>
+        let audio_status = false;
+
+        function bofang() {
+            if (!audio_status) {
+                document.getElementById('music').play();
+            }
+        }
+
+        function zanting() {
+            document.getElementById('music').pause();
+            audio_status = false;
+        }
+
+        window.onload = function() {
+            cvsgetready(document.getElementById('cvs'), 800, document.getElementById('music'), 'rgba(66,66,66,0.6)');
+        }
+    </script>
+</body>
+
+</html>
