@@ -1,6 +1,6 @@
 {
     "name": "fashion_music_cvs",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "画布实现音频数据显示",
     "main": "./index.js",
     "scripts": {
@@ -13,7 +13,7 @@
     "bugs": {
         "url": "https://github.com/Chinegoodman/fashion_music_cvs/issues"
     },
-    "homepage": "https://github.com/Chinegoodman/fashion_music_cvs",
+    "homepage": "https://github.com/Chinegoodman",
     "keywords": [
         "PSF",
         "psf",
