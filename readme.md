@@ -22,10 +22,10 @@ JS包已经发布到npm上去(https://www.npmjs.com/package/fashion_music_cvs)
         data(){
             return{
                 cvsparams : {
-                    cvsdom:'',
-                    size:800,
-                    sourcedom:'',
-                    bgcolor:'rgba(255,255,0,0.5)'
+                    cvsdom:'',//画布节点元素
+                    size:800,//画布原始默认宽高
+                    sourcedom:'',//音频源节点元素
+                    bgcolor:'rgba(255,255,0,0.5)'//画布圆圈背景颜色
                 }
             }
         )
